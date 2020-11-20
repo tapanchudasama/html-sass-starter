@@ -29,23 +29,7 @@
   color: $secondaryColor;
 }
 
-.social-media {
-  float: left;
-  top: 100%;
-  left: 50px;
-  position: absolute;
-  button {
-    @include button-style;
-    background-color: $secondaryColor;
-    color: $backgroundColor;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    display: block;
-  }
-}
-
-@media (min-width: 320px) {
+@media (min-device-width: 320px) {
   .social-media {
     visibility: hidden;
   }
@@ -69,6 +53,38 @@
     }
     .load-more-icon {
       color: $secondaryColor;
+    }
+  }
+}
+
+@media (min-device-width: 1025px) {
+  .grid-container {
+    article {
+      .grid-item {
+        text-align: left;
+        button {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .pill-button {
+    width: 150px;
+  }
+  .social-media {
+    visibility: visible;
+    float: left;
+    top: 100%;
+    left: 50px;
+    position: absolute;
+    button {
+      @include button-style;
+      background-color: $secondaryColor;
+      color: $backgroundColor;
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      display: block;
     }
   }
 }

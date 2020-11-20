@@ -1,11 +1,5 @@
 h1 {
   color: $primaryColor;
+  margin-top: 50px;
   text-align: center;
-}
-
-@media (min-width: 320px) {
-  h1 {
-    margin: auto;
-    margin-top: 50px;
-  }
 }

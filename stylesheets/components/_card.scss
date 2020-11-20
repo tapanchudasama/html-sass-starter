@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-device-width: 320px) {
   .grid-item {
     width: 90%;
     margin: 0 auto;
@@ -29,8 +29,8 @@
     .item-image {
       padding: 7px;
     }
-    .item-image{
-        padding-top: 40px;
+    .item-image {
+      padding-top: 40px;
     }
   }
 }

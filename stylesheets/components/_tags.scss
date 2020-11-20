@@ -1,13 +1,16 @@
 .tags {
   width: 80%;
-  margin: 50px 100px;
   .active {
     background-color: $primaryColor;
   }
 }
-@media (min-width: 320px) {
-  .tags{
-    width: 80%;
+@media (min-device-width: 320px) {
+  .tags {
     margin: 20px 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .tags {
+    margin: 50px 100px;
   }
 }
