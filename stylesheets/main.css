@@ -13,7 +13,7 @@ body {
   background-color: #272727;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ h1 {
   text-align: center;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   h1 {
     margin: auto;
     margin-top: 50px;
@@ -54,7 +54,7 @@ h1 {
   margin-top: 50px;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .grid-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -109,7 +109,7 @@ h1 {
   display: block;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .social-media {
     visibility: hidden;
   }
@@ -160,9 +160,9 @@ h1 {
   color: #6a6a6a;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .grid-item {
-    width: 320px;
+    width: 90%;
     margin: 0 auto;
   }
   .grid-item h3,
@@ -198,7 +198,7 @@ h1 {
   visibility: hidden;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .pagination {
     visibility: hidden;
   }
@@ -216,9 +216,9 @@ h1 {
   background-color: #ef454b;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .tags {
-    width: 100%;
+    width: 80%;
     margin: 20px 50px;
   }
 }

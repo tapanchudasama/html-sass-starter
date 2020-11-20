@@ -18,9 +18,9 @@
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (min-width: 320px) {
   .grid-item {
-    width: 320px;
+    width: 90%;
     margin: 0 auto;
     h3,
     .item-info,
