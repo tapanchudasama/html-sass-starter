@@ -46,18 +46,20 @@ h1 {
   }
 }
 
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  margin-top: 50px;
-}
-
 @media (min-width: 320px) {
   .grid-container {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
   }
 }
 
