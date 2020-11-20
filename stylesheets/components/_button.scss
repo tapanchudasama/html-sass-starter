@@ -1,0 +1,74 @@
+@mixin button-style {
+  border: $btnBorder;
+  margin-top: $btnMarginTop;
+  width: $btnWidth;
+  padding: $btnPadding;
+  cursor: $btnCursor;
+  font-size: $btnFontSize;
+}
+
+.grid-container {
+  article {
+    .grid-item {
+      button {
+        @include button-style;
+        background-color: $primaryColor;
+        border-radius: 15px;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+.pill-button {
+  @include button-style;
+  font-weight: bold;
+  border: 1px solid $primaryColor;
+  border-radius: 15px;
+  background-color: $backgroundColor;
+  color: $secondaryColor;
+}
+
+.social-media {
+  float: left;
+  top: 100%;
+  left: 50px;
+  position: absolute;
+  button {
+    @include button-style;
+    background-color: $secondaryColor;
+    color: $backgroundColor;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .social-media {
+    visibility: hidden;
+  }
+  .pill-button {
+    width: 100px;
+    font-size: small;
+  }
+  .grid-container {
+    article {
+      .grid-item {
+        text-align: center;
+      }
+    }
+  }
+  .load-more {
+    text-align: center;
+    .load-more-button {
+      @include button-style;
+      background-color: $backgroundColor;
+      color: $primaryColor;
+    }
+    .load-more-icon {
+      color: $secondaryColor;
+    }
+  }
+}

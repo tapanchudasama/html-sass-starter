@@ -1,0 +1,13 @@
+.tags {
+  width: 80%;
+  margin: 50px 100px;
+  .active {
+    background-color: $primaryColor;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .tags{
+    width: 100%;
+    margin: 20px 50px;
+  }
+}

@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  background-color: $backgroundColor;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

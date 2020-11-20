@@ -1,0 +1,25 @@
+.pagination {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  a {
+    margin: 0 5px 0 5px;
+    text-decoration: none;
+    color: $secondaryColor;
+  }
+  .active {
+    font-size: 1.5rem;
+    color: $primaryColor;
+  }
+}
+.load-more {
+  visibility: hidden;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .pagination {
+    visibility: hidden;
+  }
+  .load-more {
+    visibility: visible;
+  }
+}
